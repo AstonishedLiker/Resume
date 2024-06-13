@@ -17,6 +17,7 @@
       align-items: center;
       height: 100vh;
       background-color: #f2f2f2;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
     }
 
     .container {
@@ -26,39 +27,30 @@
       background-color: #fff;
       box-shadow: 0 52px 56px rgba(0, 0, 0, 0.1);
       animation: fade-in 1s ease-out;
+      box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
     }
 
     @keyframes fade-in {
       from {
         opacity: 0;
       }
-
       to {
         opacity: 1;
       }
     }
 
     h1 {
-      font-size: 28px;
+      font-size: 2em;
       margin-bottom: 10px;
       color: #333;
       position: relative;
     }
 
     h2 {
-      font-size: 18px;
+      font-size: 1.2em;
       margin-bottom: 10px;
       color: #333;
       position: relative;
-    }
-
-    @keyframes blink-caret {
-      0%, 100% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 0;
-      }
     }
 
     .typewriter {
@@ -78,7 +70,7 @@
     }
 
     p {
-      font-size: 16px;
+      font-size: 1em;
       line-height: 1.6;
       margin-bottom: 11px;
       color: #555;
@@ -112,10 +104,6 @@
       margin-left: 5px;
     }
 
-    .link-item a::after {
-      line-break: strict;
-    }
-
     a {
       text-decoration: none;
       color: #333;
@@ -126,31 +114,16 @@
       color: #007bff;
     }
 
-    a::before {
-      margin-left: 5px;
-    }
-
-    a::after {
-      line-break: strict;
-    }
-
-    .link-item:last-child::after {
-      display: none;
-    }
-
     @media (max-width: 600px) {
       h1 {
-        font-size: 24px;
+        font-size: 1.5em;
       }
-
       h2 {
-        font-size: 16px;
+        font-size: 1em;
       }
-
       p {
-        font-size: 14px;
+        font-size: 0.9em;
       }
-
       .container {
         padding: 15px;
       }
@@ -170,9 +143,7 @@
     <p>
       You can contact me on discord by adding me via the handle <a href="https://discord.com/users/991295398780084334">"likah.sys"</a>.
     </p>
-    <h2>
-      POSITIONS:
-    </h2>
+    <h2>POSITIONS:</h2>
     <div class="links">
       <div class="link-item">
         ~ Founder @ ASense <a href="https://discord.gg/tvzApzg4vj">discord.gg/tvzApzg4vj</a>
@@ -181,9 +152,7 @@
         ~ Developer @ EDM Studio <a href="https://discord.gg/6GzBPkMkdA">discord.gg/6GzBPkMkdA</a>
       </div>
     </div>
-    <h2>
-      CONTRIBUTIONS:
-    </h2>
+    <h2>CONTRIBUTIONS:</h2>
     <div class="links">
       <div class="link-item">
         ~ S.A.C AntiCheat => EDM Studio<a href="https://discord.gg/6GzBPkMkdA">discord.gg/6GzBPkMkdA</a>
@@ -192,17 +161,13 @@
         <i>~ L.A.T AntiCheat => Luh Aim Trainer (Discontinued)</i>
       </div>
     </div>
-    <h2>
-      PROJECTS:
-    </h2>
+    <h2>PROJECTS:</h2>
     <div class="links">
       <div class="link-item">
-        ~ YTInsights: OSINT YouTube Nocode Method<a
-          href="https://github.com/ASenseHD/YTInsights/tree/main">github.com/ASenseHD/YTInsights</a>
+        ~ YTInsights: OSINT YouTube Nocode Method<a href="https://github.com/ASenseHD/YTInsights/tree/main">github.com/ASenseHD/YTInsights</a>
       </div>
       <div class="link-item">
-        ~ SLVM: Rbx Lua CEE Utility<a
-          href="https://devforum.roblox.com/t/slvm/2774729">devforum.roblox.com/t/slvm/2774729</a>
+        ~ SLVM: Rbx Lua CEE Utility<a href="https://devforum.roblox.com/t/slvm/2774729">devforum.roblox.com/t/slvm/2774729</a>
       </div>
     </div>
   </div>
