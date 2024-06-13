@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      width: 700px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 52px 56px rgba(0, 0, 0, 0.1);
+      animation: fade-in 1s ease-out;
+    }
+
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #333;
+      position: relative;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #333;
+      position: relative;
+    }
+
+    @keyframes blink-caret {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .typewriter {
+      overflow: hidden;
+      border-right: 0.15em solid #333;
+      border-right-width: 3px;
+      white-space: nowrap;
+      animation: typewriter 5s steps(40) infinite;
+    }
+
+    @keyframes typewriter {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 10ch;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 11px;
+      color: #555;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      line-break: strict;
+    }
+
+    .link-item {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      line-break: strict;
+    }
+
+    .link-item a {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.2s ease;
+      line-break: strict;
+    }
+
+    .link-item a:hover {
+      color: #007bff;
+    }
+
+    .link-item a::before {
+      content: ' | ';
+      margin-left: 5px;
+    }
+
+    .link-item a::after {
+      line-break: strict;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.2s ease;
+      line-break: strict;
+    }
+
+    a:hover {
+      color: #007bff;
+    }
+
+    a::before {
+      /*content: ' | ';*/
+      margin-left: 5px;
+    }
+
+    a::after {
+      line-break: strict;
+    }
+
+    .link-item:last-child::after {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1><span class="typewriter"></span></h1>
+    <p>
+      Hello, my name is Liker and I create stunning and useful user interfaces as a 14 year old French UI designer and developer.
+      I'm fluent in both French and English, and I'm great at working with all kinds of teams. As I develop my
+      programming abilities, I'm looking at Assembly, Node.JS and Rust in addition to my experience with C, C++, C#,
+      Lua and it's subset Luau and Python3.
+    </p>
+    <p>
+      You can contact me on discord by adding me via the handle <a href="https://discord.com/users/991295398780084334">"likah.sys"</a>.
+    </p>
+    <h2>
+      POSITIONS:
+    </h2>
+    <div class="links">
+      <div class="link-item">
+        ~ Founder @ ASense <a href="https://discord.gg/tvzApzg4vj">discord.gg/tvzApzg4vj</a>
+      </div>
+      <div class="link-item">
+        ~ Developer @ EDM Studio <a href="https://discord.gg/6GzBPkMkdA">discord.gg/6GzBPkMkdA</a>
+      </div>
+    </div>
+    <h2>
+      CONTRIBUTIONS:
+    </h2>
+    <div class="links">
+      <div class="link-item">
+        ~ S.A.C AntiCheat => EDM Studio<a href="https://discord.gg/6GzBPkMkdA">discord.gg/6GzBPkMkdA</a>
+      </div>
+      <div class="link-item">
+        <i>~ L.A.T AntiCheat => Luh Aim Trainer (Discontinued)</i>
+      </div>
+    </div>
+    <h2>
+      PROJECTS:
+    </h2>
+    <div class="links">
+      <div class="link-item">
+        ~ YTInsights: OSINT YouTube Nocode Method<a
+          href="https://github.com/ASenseHD/YTInsights/tree/main">github.com/ASenseHD/YTInsights</a>
+      </div>
+      <div class="link-item">
+        ~ SLVM: Rbx Lua CEE Utility<a
+          href="https://devforum.roblox.com/t/slvm/2774729">devforum.roblox.com/t/slvm/2774729</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const typewriterElement = document.querySelector('.typewriter');
+    const phrases = ['Hello!', 'Salut!', 'Ciao!', 'Привіт!', 'Hej!', '¡Hola!', 'Привет!', 'Hallo!', 'Γεια!', 'Bok!', 'أهلاً!', '你好！', '안녕!', 'Hei!', 'היי!', 'नमस्ते!', 'Szia!', 'Hæ!', 'こんにちは！', 'Salve!', 'Sveiki!', 'Здраво!', 'Сайн уу!', 'Hoi!', 'Hai', 'ياخشىمۇسىز!', 'Salom!', 'Cześć!', 'Oi!', 'Allinllachu!', 'Bună!', 'Ahoj!', 'zdravo!'];
+    let currentPhrase = 0;
+    let currentLetter = 0;
+    let isDeleting = false;
+    let typingSpeed = 200;
+    let delayBetweenPhrases = 5000;
+
+    function type() {
+      const phrase = phrases[currentPhrase];
+      let text = '';
+
+      if (!isDeleting && currentLetter <= phrase.length) {
+        for (let i = 0; i < currentLetter; i++) {
+          if (i < phrase.length) {
+            text += phrase[i];
+          }
+        }
+        currentLetter++;
+        if (currentLetter === phrase.length + 1) {
+          isDeleting = true;
+          typingSpeed = 140;
+        }
+      } else if (isDeleting && currentLetter >= 0) {
+        for (let i = 0; i < currentLetter; i++) {
+          if (i < phrase.length) {
+            text += phrase[i];
+          }
+        }
+        currentLetter--;
+        if (currentLetter === 0) {
+          isDeleting = false;
+          currentPhrase = (currentPhrase + 1) % phrases.length;
+          typingSpeed = 200;
+          delayBetweenPhrases = 10000;
+        }
+      }
+
+      typewriterElement.textContent = text;
+      setTimeout(type, typingSpeed);
+    }
+
+    setTimeout(type, 500);
+  </script>
+</body>
+
+</html>
