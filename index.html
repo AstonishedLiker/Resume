@@ -98,6 +98,11 @@
       transition: color 0.2s ease;
       overflow: hidden;
       text-overflow: ellipsis;
+      font-style: italic;
+    }
+
+    .link-item a:before {
+      content: "\00a0"; /* I hate CSS */
     }
 
     .link-item a:hover {
@@ -108,10 +113,6 @@
       text-decoration: none;
       color: #333;
       transition: color 0.2s ease;
-    }
-
-    a:before {
-      content: "\00a0";
     }
     
     a:hover {
